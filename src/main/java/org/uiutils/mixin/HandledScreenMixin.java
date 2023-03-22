@@ -39,7 +39,7 @@ public class HandledScreenMixin extends Screen {
     public void init(CallbackInfo ci) {
 
         // register "close without packet" button in all HandledScreens
-        addDrawableChild(ButtonWidget.builder(Text.of("Close without packet"), (button) -> {
+        addDrawableChild(ButtonWidget.builder(Text.of("Uzdaryti be packetu"), (button) -> {
 
             // closes the current gui without sending a packet to the current server
             mc.setScreen(null);
